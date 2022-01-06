@@ -1,0 +1,151 @@
+#page-movie {
+  .movie-header {
+    margin-bottom: 16px;
+
+    .movie-title {
+      margin-bottom: 8px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .genres {
+      @include flexCenter;
+      gap: 8px;
+
+      .genre {
+        padding: 8px;
+        background-color: var(--transparent);
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .block-movie {
+    img.poster {
+      @include wh(327px, auto);
+    }
+  }
+  .all-movies,
+  .all-people {
+    @include flexCenter;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .all-people {
+    .card-people {
+      background-color: var(--black-light);
+      box-shadow: 0px 0 5px 0px rgba(255, 255, 255, 0.5);
+      width: 125px;
+      border-radius: 8px;
+      align-self: stretch;
+
+      img.profil {
+        width: 125px;
+        height: 187.5px;
+        object-fit: fill;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+
+      .card-body {
+        padding: 8px;
+        text-align: center;
+
+        .character {
+          font-size: 14px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+  .all-movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 12px;
+
+    .card-movie {
+      background-color: var(--black-light);
+      box-shadow: 0px 0 5px 0px rgba(255, 255, 255, 0.5);
+      width: 100px;
+      border-radius: 8px;
+      align-self: stretch;
+
+      img.poster {
+        width: 100px;
+        height: 150px;
+        object-fit: fill;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+
+      .card-body {
+        padding: 12px 8px;
+
+        .block-title {
+          .title-movie {
+            text-align: center;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+* ? Tablet
+*/
+@media (min-width: 768px) {
+  #page-movie {
+    .movie-title {
+      font-size: 36px;
+    }
+    .block-movie {
+      display: flex;
+      gap: 12px;
+    }
+    .all-movies {
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 16px;
+
+      .card-movie {
+        width: 150px;
+
+        img.poster {
+          width: 150px;
+          height: 225px;
+        }
+      }
+    }
+  }
+}
+
+/**
+* ? DeskTop
+*/
+@media (min-width: 1440px) {
+  #page-movie {
+    .block-movie {
+      img.poster {
+        @include wh(auto, auto);
+      }
+    }
+    .all-movies {
+      grid-template-columns: repeat(5, 1fr);
+      row-gap: 20px;
+
+      .card-movie {
+        width: 200px;
+
+        img.poster {
+          width: 200px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
