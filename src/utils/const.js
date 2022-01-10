@@ -1,4 +1,5 @@
-export const API_KEY = "?api_key=061eaf24655991b2b90735fbf79209a2";
+console.log(process.env.REACT_APP_API_KEY);
+export const API_KEY = "?api_key=" + process.env.REACT_APP_API_KEY;
 export const BASE_URL = "https://api.themoviedb.org/3";
 export const BASE_URL_MOVIE = BASE_URL + '/movie/';
 export const LANG = "&language=fr-FR";

@@ -95,27 +95,27 @@ const Home = () => {
           </nav>
           <div className="all-movies">
             {activeTab === 0 &&
-              moviesDiscover.length > 0 &&
+              moviesDiscover?.length > 0 &&
               moviesDiscover
                 .slice(0, numberMovie)
                 .map((movie, k) => <CardMovie {...movie} key={k} />)}
             {activeTab === 1 &&
-              moviesTrending.length > 0 &&
+              moviesTrending?.length > 0 &&
               moviesTrending
                 .slice(0, numberMovie)
                 .map((movie, k) => <CardMovie {...movie} key={k} />)}
             {activeTab === 2 &&
-              moviesPopular.length > 0 &&
+              moviesPopular?.length > 0 &&
               moviesPopular
                 .slice(0, numberMovie)
                 .map((movie, k) => <CardMovie {...movie} key={k} />)}
             {activeTab === 3 &&
-              moviesNow.length > 0 &&
+              moviesNow?.length > 0 &&
               moviesNow
                 .slice(0, numberMovie)
                 .map((movie, k) => <CardMovie {...movie} key={k} />)}
             {activeTab === 4 &&
-              moviesUpComing.length > 0 &&
+              moviesUpComing?.length > 0 &&
               moviesUpComing
                 .slice(0, numberMovie)
                 .map((movie, k) => <CardMovie {...movie} key={k} />)}
