@@ -2,32 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) & [The Movie Database (TMDB) API](https://developers.themoviedb.org/3/getting-started/introduction).
 
-![Desktop home](./screenshot/Desktop home.png)
+![Desktop home](./screenshot/desktop_home.png)
 
+![Desktop search](./screenshot/desktop_search.png)
 
+![Desktop search](./screenshot/desktop_movie.png)
 
-![Desktop search](./screenshot/Desktop search.png)
+![mobile home](./screenshot/mobile_home.png)
 
+![mobile search](./screenshot/mobile_search.png)
 
+![mobile movie](./screenshot/mobile_movie.png)
 
-![Desktop search](./screenshot/Desktop movie.png)
+## NPM Package
 
-
-
-![mobile home](./screenshot/mobile home.png)
-
-
-
-![mobile search](./screenshot/mobile search.png)
-
-
-
-![mobile movie](./screenshot/mobile movie.png)
-
-## Dependancy
-
-- node-sass
-- react-router-dom
+- [node-sass](https://www.npmjs.com/package/node-sass)
+- [React Router DOM](https://www.npmjs.com/package/react-router-dom)
 
 ## Author
 
