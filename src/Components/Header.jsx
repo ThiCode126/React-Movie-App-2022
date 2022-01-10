@@ -24,7 +24,7 @@ const Header = () => {
           <nav>
             <div>
               <Link className="link" to="/">
-                Movie App 2.0
+                Movie App 1.0
               </Link>
             </div>
             <div className="search-block">

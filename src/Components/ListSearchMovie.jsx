@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { BASE_IMG } from "../utils/const";
 
 const ListSearchMovie = ({ item }) => {
-  const { id, poster_path, title, release_date } = item;
+  console.log(item);
+  const { id, poster_path, title, original_title, release_date } = item;
   return (
     <Link to={`/movie/${id}`} title={title}>
       <div className="search-result-item">
@@ -17,7 +18,8 @@ const ListSearchMovie = ({ item }) => {
           />
         )}
         <div className="title">
-          <h4>{title}</h4>
+          <h5>{title}</h5>
+          <h6 className="original">{original_title}</h6>
           <h6 className="year">{release_date}</h6>
         </div>
       </div>

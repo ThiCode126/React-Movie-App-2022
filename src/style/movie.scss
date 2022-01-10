@@ -24,6 +24,14 @@
     img.poster {
       @include wh(327px, auto);
     }
+
+    .data-movie {
+      padding-left: 12px;
+
+      .overview {
+        text-align: justify;
+      }
+    }
   }
   .all-movies,
   .all-people {
@@ -105,8 +113,23 @@
       font-size: 36px;
     }
     .block-movie {
-      display: flex;
-      gap: 12px;
+      display: grid;
+      grid-template-areas:
+        "poster data-movie"
+        "yt data-movie";
+
+      .poster {
+        grid-area: poster;
+      }
+      .data-movie {
+        grid-area: data-movie;
+      }
+      .yt {
+        grid-area: yt;
+      }
+    }
+    .all-people {
+      gap: 16px;
     }
     .all-movies {
       grid-template-columns: repeat(4, 1fr);
@@ -130,9 +153,14 @@
 @media (min-width: 1440px) {
   #page-movie {
     .block-movie {
-      img.poster {
-        @include wh(auto, auto);
+      grid-template-areas: "poster data-movie yt";
+
+      .data-movie {
+        padding-right: 12px;
       }
+    }
+    .all-people {
+      gap: 12px;
     }
     .all-movies {
       grid-template-columns: repeat(5, 1fr);

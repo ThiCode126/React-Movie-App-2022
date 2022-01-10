@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { BASE_IMG } from "../utils/const";
 
-const CardPeople = ({ id, name, character, profile_path }) => {
+const CardPeople = ({ id, name, character, profile_path, job }) => {
   return (
     <div className="card-people">
       {profile_path ? (
@@ -19,7 +19,8 @@ const CardPeople = ({ id, name, character, profile_path }) => {
         <Link to={`/person/${id}`}>
           <h5 className="name-people">{name}</h5>
         </Link>
-        <p className="character">{character}</p>
+        {character && <p className="character">{character}</p>}
+        {job && <p className="character">{job}</p>}
       </div>
     </div>
   );
