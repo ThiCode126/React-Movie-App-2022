@@ -14,7 +14,7 @@ export const UPCOMING_URL = BASE_URL + "/movie/upcoming" + API_KEY + LANG
 
 export const SEARCH_URL = BASE_URL + "/search/movie" + API_KEY + LANG + QUERY
 
-export const BASE_IMG = "https://image.tmdb.org/t/p/w500";
+export const BASE_IMG = "https://image.tmdb.org/t/p/w342";
 
 
 
