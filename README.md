@@ -2,7 +2,27 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) & [The Movie Database (TMDB) API](https://developers.themoviedb.org/3/getting-started/introduction).
 
-![Preview](https://pbs.twimg.com/media/FIRLOYEXwBQw0bu?format=jpg&name=large)
+![Desktop home](./screenshot/Desktop home.png)
+
+
+
+![Desktop search](./screenshot/Desktop search.png)
+
+
+
+![Desktop search](./screenshot/Desktop movie.png)
+
+
+
+![mobile home](./screenshot/mobile home.png)
+
+
+
+![mobile search](./screenshot/mobile search.png)
+
+
+
+![mobile movie](./screenshot/mobile movie.png)
 
 ## Dependancy
 
